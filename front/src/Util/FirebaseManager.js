@@ -5,9 +5,9 @@ class FirebaseManager {
   constructor () {
     // Initialize Cloud Firestore through Firebase
     firebase.initializeApp({
-      apiKey: '',
-      authDomain: '',
-      projectId: ''
+      apiKey: process.env.VUE_APP_FB_API_KEY,
+      authDomain: process.env.VUE_APP_FB_AUTH_DOMAIN,
+      projectId: process.env.VUE_APP_FB_PROJECT_ID
     })
     this.db = firebase.firestore()
   }
