@@ -14,7 +14,7 @@ $ docker-compose exec npm install
 
 ### Enter the docker container console
 
-コンテナ内のコンソールに入る場合、下記のコマンドを入力してください。
+コンテナ内のコンソールに入る場合、下記のコマンドを入力してください。
 
 ```bash
 $ docker-compose exec web ash 
