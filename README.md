@@ -55,13 +55,17 @@ Firebaseの機能に関しましては、`class`を作成しているため、�
 ### Setting Up Firebase
 
 1. Firebase のFirestore を設定してください
-2. `./front/src/Utils/FirebaseManager.js`にFirebaseに登録したアプリの情報を追加してください
+2. `./front/.env`を追加します
+3. `./front/.envsample`を参考にFirebaseに登録したアプリの情報を追加してください
 
-```javascript
-// Initialize Cloud Firestore through Firebase
-firebase.initializeApp({
-  apiKey: 'ウェブ API キー',
-  authDomain: '公開名',
-  projectId: 'プロジェクト ID'
+```
+// .envの記載例
+VUE_APP_FB_API_KEY=XXXXXXXXXXXXX
+VUE_APP_FB_AUTH_DOMAIN=XXXXXXXXXXXXX
+VUE_APP_FB_DATABASE_URL=XXXXXXXXXXXXX
+VUE_APP_FB_PROJECT_ID=XXXXXXXXXXXXX
+VUE_APP_FB_STORAGE_BUCKET=XXXXXXXXXXXXX
+VUE_APP_FB_MESSAGING_SENDER_ID=XXXXXXXXXXXXX
+VUE_APP_FB_APP_ID=XXXXXXXXXXXXX
 })
 ```
